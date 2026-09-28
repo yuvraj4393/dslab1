@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int queue[5];
+    int front=0;
+    int rear=0;
+    cout<<"\n Enter 5 Customer Order Number : "<<endl;
+
+    for(int i=0;i<5;i++)
+    {
+        cin>>queue[rear];
+        rear++;
+
+    }
+    cout<<"\n Processing orders: "<<endl;
+
+    while(front<rear)
+    {
+        cout<<"Processing Order: "<<queue[front]<<endl;
+        front++;
+
+    }
+    return 0;
+
+
+}
